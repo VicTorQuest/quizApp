@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+:root {
+    --primary-color: #ac9ef2;
+    --secondary-color: #161921;
+    --background-color: #0d0e14;
+    --text-color: #ADB1C2;
+    --heading-color: #fefefe;
+}
+
+
+
+body {
+    box-sizing: border-box;
+    font-family: "Space Mono", serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+.container {
+    background-color: var(--secondary-color);
+    width: 600px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    padding: 15px 25px;
+    border-radius: 10px;
+}
+
+
+.container h1 {
+    color: var(--heading-color);
+    text-align: center;
+    text-shadow: 0px 0px 4px #fff6;
+}
+
+
+.container .options {
+    list-style-type: none;
+    padding: 0;
+}
+
+.container .options .option {
+    display: block;
+    width: 100%;
+    background-color: transparent;
+    color: var(--text-color);
+    border: 1px solid var(--text-color);
+    text-align: left;
+    padding: 12px;
+    margin-bottom: 5px;
+    transition: all 0.3s ease;
+}
+
+.container .options .option:hover {
+    cursor: pointer;
+    background-color: #c5bbf4;
+    color: #1c1c1c;
+}
+
+.container .bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-top: 10px;
+}
+
+
+.container .bottom p {
+    width: 33%;
+}
+
+
+.container .bottom .progress-indicator {
+    text-align: right;
+}
+
+.container .next-button {
+    background-color: var(--primary-color);
+    padding: 10px 20px;
+    border-radius: 2px;
+    border: none;
+    color: #1c1c1c;
+    font-size: 16px;
+    transition: all 0.2s linear;
+}
+
+
+.container .next-button:hover {
+    cursor: pointer;
+    opacity: 0.8;
+}
