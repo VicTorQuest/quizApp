@@ -48,7 +48,7 @@ body {
     color: var(--text-color);
     border: 1px solid var(--text-color);
     text-align: left;
-    padding: 12px;
+    padding: 15px 12px;
     margin-bottom: 5px;
     transition: all 0.3s ease;
 }
@@ -56,6 +56,12 @@ body {
 .container .options .option:hover {
     cursor: pointer;
     background-color: #c5bbf4;
+    color: #1c1c1c;
+}
+
+
+.container .options .option:focus {
+    background-color: var(--primary-color);
     color: #1c1c1c;
 }
 
@@ -72,6 +78,14 @@ body {
     width: 33%;
 }
 
+.container .bottom .score {
+    background-color: #242632;
+    color: var(--heading-color);
+    border-radius: 5px;
+    padding: 5px 20px;
+    text-align: center;
+    width: auto;
+}
 
 .container .bottom .progress-indicator {
     text-align: right;
@@ -88,7 +102,32 @@ body {
 }
 
 
-.container .next-button:hover {
+.container .next-button:hover, .container .result .try-again:hover {
     cursor: pointer;
+    background-color: #9481f3;
+}
+
+.container .next-button:disabled {
     opacity: 0.8;
+    background-color: var(--primary-color);
+    cursor: default;
+}
+
+.container .result {
+    display: none;
+}
+
+
+.container .result {
+    text-align: center;
+}
+
+.container .result .try-again {
+    background-color: var(--primary-color);
+    color: #1c1c1c;
+    font-size: 16px;
+    border-radius: 5px;
+    padding: 15px 25px;
+    font-weight: 500;
+    transition: all 0.3s linear;
 }

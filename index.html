@@ -8,7 +8,7 @@
 </head>
 <body>
     <div class="container">
-        <h1>Quiz App</h1>
+        <h1 id="title">Quiz App</h1>
         <p id="question">What is the capital of the united states</p>
         <div id="options" class="options">
             <button class="option">first option</button>
@@ -16,11 +16,18 @@
             <button class="option">third option</button>
             <button class="option">fourth option</button>
         </div>
-        <div class="bottom">
-            <p id="score">Score: 5</p>
-            <button type="button" class="next-button" id="nextBtn">Next</button>
+        <div class="bottom" id="bottomElements">
+            <p><span id="score" class="score">Score: 0</span></p>
+            <button type="button" disabled class="next-button" id="nextBtn">Next</button>
             <p id="progressIndicator" class="progress-indicator">Question 2 of 10</p>
         </div>
+        
+        <div class="result" id="result">
+            <h2 id="finalScore">Your score: 5 / 10</h2>
+            <button id="tryAgain" class="try-again">Retry</button>
+        </div>
     </div>
+
+    <script src="./main.js"></script>
 </body>
 </html>
